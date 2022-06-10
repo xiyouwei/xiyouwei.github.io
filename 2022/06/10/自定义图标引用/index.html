@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css," />
 
 
 
@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1、fill fill 是 svg 元素的一种属性，svg 元素的这些属性，用于指定如何处理或者呈现元素的详细信息； fill 对于形状元素和文本，它定义了绘制元素的颜色，对于动画，它定义了动画的最终状态，在下面的例子中，它定义了图标的颜色。 2、currentColor currentColor 在 css 中，currentColor 是一个变量，这个变量的值是当前元素的 color 值； c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/12/01/hello-world/index.html">
+<meta property="og:title" content="自定义图标 css 样式">
+<meta property="og:url" content="http://example.com/2022/06/10/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E6%A0%87%E5%BC%95%E7%94%A8/index.html">
 <meta property="og:site_name" content="西柚味">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1、fill fill 是 svg 元素的一种属性，svg 元素的这些属性，用于指定如何处理或者呈现元素的详细信息； fill 对于形状元素和文本，它定义了绘制元素的颜色，对于动画，它定义了动画的最终状态，在下面的例子中，它定义了图标的颜色。 2、currentColor currentColor 在 css 中，currentColor 是一个变量，这个变量的值是当前元素的 color 值； c">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-12-01T08:02:42.790Z">
-<meta property="article:modified_time" content="2022-06-10T04:13:15.180Z">
+<meta property="article:published_time" content="2022-06-10T08:19:47.000Z">
+<meta property="article:modified_time" content="2022-06-10T08:30:39.564Z">
 <meta property="article:author" content="Youwei Xi">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2020/12/01/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2022/06/10/自定义图标引用/"/>
 
 
 
 
 
-  <title>Hello World | 西柚味</title>
+  <title>自定义图标 css 样式 | 西柚味</title>
   
 
 
@@ -279,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">自定义图标 css 样式</h1>
         
 
         <div class="post-meta">
@@ -291,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-01T16:02:42+08:00">
-                2020-12-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-06-10T16:19:47+08:00">
+                2022-06-10
               </time>
             
 
@@ -329,19 +330,17 @@
       
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p><strong>1、fill</strong></p>
+<p><strong><code>fill</code></strong> 是 svg 元素的一种属性，svg 元素的这些属性，用于指定如何处理或者呈现元素的详细信息；</p>
+<p><strong><code>fill</code></strong> 对于形状元素和文本，它定义了绘制元素的颜色，对于动画，它定义了动画的最终状态，在下面的例子中，它定义了图标的颜色。</p>
+<p><strong>2、currentColor</strong></p>
+<p><strong><code>currentColor</code></strong> 在 css 中，currentColor 是一个变量，这个变量的值是当前元素的 color 值；</p>
+<p><strong><code>currentColor</code></strong>  如果当前元素没有在 css 里显示地指定一个 color 值，那它的颜色值就遵从 css 规则，从父元素继承而来。</p>
+<p><strong>3、iconfont 为何要设置 vertical-align: -0.15em</strong></p>
+<p>因 icon 大小被设置为和字体大小一致，而 span 等标签的下边缘会和字体的基线对齐，故需设置一个往下的偏移比例，来纠正视觉上的未对齐效果。</p>
+<p><strong>例子</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.svg-icon</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: -<span class="number">0.15em</span>;</span><br><span class="line">  <span class="attribute">fill</span>: currentColor;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -357,6 +356,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="../../../../tags/css/" rel="tag"># css</a>
+          
+        </div>
+      
 
       
       
@@ -366,15 +371,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="../npm-%E6%9F%A5%E7%9C%8B-%E5%88%87%E6%8D%A2-%E4%B8%B4%E6%97%B6%E6%B0%B8%E4%B9%85%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/" rel="next" title="npm 查看/切换 临时永久使用淘宝镜像">
+                <i class="fa fa-chevron-left"></i> npm 查看/切换 临时永久使用淘宝镜像
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="../../../../2022/06/10/npm-%E6%9F%A5%E7%9C%8B-%E5%88%87%E6%8D%A2-%E4%B8%B4%E6%97%B6%E6%B0%B8%E4%B9%85%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/" rel="prev" title="npm 查看/切换 临时永久使用淘宝镜像">
-                npm 查看/切换 临时永久使用淘宝镜像 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -426,17 +431,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -497,22 +493,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
